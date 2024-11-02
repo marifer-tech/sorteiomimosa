@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio da Mimosa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Página de Login -->
+    <div id="login-section">
+        <img src="images/logo-mimosa.jpg" alt="Logo da Loja Mimosa" class="login-logo">
+        <h2>Login</h2>
+        <form onsubmit="login(); return false;">
+            <input type="text" id="username" placeholder="Usuário" onkeydown="goToNextField(event, 'password')">
+            <input type="password" id="password" placeholder="Senha" onkeydown="goToNextField(event, 'login-button')">
+            <button type="button" id="login-button" onclick="login()">Entrar</button>
+            <p id="login-message" style="color: red;"></p>
+        </form>
+    </div>
+
+    <!-- Página de Sorteio (oculta até o login) -->
+    <div id="sorteio-section" style="display: none;">
+        <h2>Primeiro sorteio da Loja Mimosa</h2>
+        <button onclick="sortear()">Realizar Sorteio</button>
+        
+        <!-- Contagem regressiva -->
+        <p id="contagem-regressiva" style="display: none;">Aguarde: <span id="contador">20</span> segundos...</p>
+    
+        <div id="resultado" style="display: none;">
+            <h3  style="font-size: 30px;">Vencedor</h3>
+            <p><span id="vencedor-username"></span></p>
+            <p><strong></strong> <span id="vencedor-nome"></span></p>
+            <img id="vencedor-foto" src="" alt="Foto do Vencedor" style="width:100px; height:100px;">
+            
+            <!-- Botão de Agradecimento com mais espaçamento abaixo da foto -->
+            <button onclick="mostrarAgradecimento()">Mensagem de Agradecimento</button>
+        </div>
+    </div>
+
+    <!-- Tela de Agradecimento -->
+    <div id="agradecimento-section" style="display: none;">
+        <h2 style="text-align: center;">Obrigado por Participar!</h2>
+        <p style="text-align: center;">Parabéns <span id="nome-vencedor"></span>! A equipe da Mimosa agradece sua participação.</p>
+        <p style="text-align: center;">Esperamos que continue nos acompanhando para mais novidades e sorteios futuros!</p>
+        <br><p style="text-align: center;">Eu vou contar a minha experiência como cliente da loja:</p>
+        <p>A loja Mimosa é uma loja virtual que nasceu com um propósito muito especial: criar produtos humanizados.
+            Os integrantes da loja acreditam que cada pessoa é única, com o seu próprio
+            estilo, seus gostos e sua personalidade. E é por isso que o lema da loja é: "O seu estilo é a nossa inspiração".
+            Então, aproveite, explore e se inspire, deixando a Mimosa fazer parte da sua história. 
+            Obrigada pela participação de todos. 
+            Acessem o nosso perfil e cliquem no link na nossa BIO para acessar nossas outras redes sociais e para entrar em contato
+        com as nossas vendedoras.</p>
+        </p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

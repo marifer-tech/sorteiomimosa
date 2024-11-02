@@ -1,0 +1,157 @@
+body {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #81D6CF;
+}
+
+#sorteio-section {
+    background-color: #81D6CF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    border: 2px solid #d4a017; /* Borda dourada */
+}
+
+#sorteio-section {
+    display: none;
+    
+}
+
+/* Estilo para o botão de agradecimento (no sorteio-section) */
+#sorteio-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d45a1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* quando o mouse passa em cima do botão */
+#sorteio-section button:hover {
+    background-color: #c04e18;
+}
+
+#login-message {
+    color: red;
+}
+
+#login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #81D6CF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid #d4a017; /* Borda dourada */
+    text-align: center;
+}
+
+
+
+#comentarios {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#resultado {
+    display: none;
+    margin-top: 20px;
+}
+
+#vencedor-foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#resultado button {
+    margin-top: 20px; /* Ajuste o valor conforme a distância desejada */
+}
+
+#agradecimento-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilo para o texto da contagem regressiva */
+#contagem-regressiva {
+    color: #d45a1c;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo especial para o parágrafo com o nome do vencedor */
+#agradecimento-section #nome-vencedor {
+    font-weight: bold;
+    color: #d45a1c; /* Cor especial para destaque */
+}
+
+/* Estilo para os parágrafos dentro do agradecimento */
+#agradecimento-section {
+    max-width: 800px; /* Define a largura máxima do bloco */
+    margin: 0 auto; /* Centraliza o bloco horizontalmente */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+#nome-vencedor {
+font-size: 20px;
+}
+
+#vencedor-nome {
+    font-size: 40px;
+}
+
+
+
+    .login-logo {
+        max-width: 100%; /* A imagem nunca será maior que a largura do container */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-bottom: 20px; /* Espaçamento entre a imagem e o título */
+
+}
+
+/* Estilos botão*/
+
+#login-section button {
+    width: 25%; /*largura*/
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#login-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
