@@ -38,6 +38,7 @@ function sortear() {
         { username: "@simariaccruz", nome: "Simaria Cruz", foto: "images/simaria.jpg" },
          { username: "@jacke.s_p", nome: "Jacke Santos Pinaffi", foto: "images/jacke.jpg" },
          { username: "@elyssarantes", nome: "Elyssa Arantes", foto: "images/elyssa.jpg" },
+         { username: "@mazini_cosmeticos", nome: "Paula Mazini", foto: "images/mazini.jpg" },
     ];
 
     const randomIndex = Math.floor(Math.random() * participantes.length);
