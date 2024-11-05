@@ -33,13 +33,8 @@ function goToNextField(event, nextFieldId) {
 function sortear() {
     // Lista de participantes com @username, nome e foto
     const participantes = [
-        { username: "@leiasantos33", nome: "Leia Santos", foto: "images/leiasantos.jpg" },
-        { username: "@joosyf", nome: "Josy Ferreira", foto: "images/josy.jpg" },
-        { username: "@simariaccruz", nome: "Simaria Cruz", foto: "images/simaria.jpg" },
          { username: "@jacke.s_p", nome: "Jacke Santos Pinaffi", foto: "images/jacke.jpg" },
-         { username: "@elyssarantes", nome: "Elyssa Arantes", foto: "images/elyssa.jpg" },
-         { username: "@mazini_cosmeticos", nome: "Paula Mazini", foto: "images/mazini.jpg" },
-         { username: "@daianaregina24", nome: "Daiana Regina", foto: "images/daiana.jpg" },
+       
     ];
 
     const randomIndex = Math.floor(Math.random() * participantes.length);
