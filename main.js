@@ -33,7 +33,7 @@ function goToNextField(event, nextFieldId) {
 function sortear() {
     // Lista de participantes com @username, nome e foto
     const participantes = [
-         { username: "@jacke.s_p", nome: "Jacke Santos Pinaffi", foto: "images/jacke.jpg" },
+         { username: "@INSIRAUSUARIO", nome: "[INSIRA O NOME]", foto: "" },
        
     ];
 
